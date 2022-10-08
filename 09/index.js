@@ -1,6 +1,6 @@
 const nome = 'Guido Cerqueira';
 
-function nicknome(nome) {
+function nickname(nome) {
     const nomeMinusculo = nome.toLowerCase();
     const nomeFormatado = nomeMinusculo.replace(/[^a-z]/g, "")
     if (nome.length <= 13) {
@@ -13,4 +13,4 @@ function nicknome(nome) {
     }
 }
 
-console.log(nicknome(nome));
+console.log(nickname(nome));
