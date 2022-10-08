@@ -4,11 +4,8 @@ function validarExtencao(nomeArquivo) {
     const validarFormato = nomeArquivo.includes("jpg", "jpeg", "gif", "png");
     const validar = nomeArquivo.includes(".");
 
-    if (validar === true && validarFormato === true) {
-        console.log("Formato aceito.")
-    } else {
-        console.log("Formato invalido.")
-    }
+    const formato = validar === true && validarFormato === true ? "Formato aceito." : "Formato invalido.";
+
     return formato;
 }
 
